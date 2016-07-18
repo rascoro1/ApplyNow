@@ -3,9 +3,9 @@
     <head></head>
     <body>
         <div>
-            <table>
-                <tr class="spaceOut">
-                    <td><a href='/' title="Home" id="homeLink"> Home</a></td>
+            <!-- CSS: class spaceOut will make all links below hug top right and also have a larger spacing inbetween -->
+            <table class="spaceOut">
+                <tr>
                     <td><a href='/' title="Update Application" id="applicationLink"> Upload Application</a></td>
                     <td align="right"><a href='/' title="Login" id="applicationLink">Login</a></td>
                 </tr>
@@ -20,21 +20,24 @@
                     <td id="whatSeach">
                         <table>
                             <tbody>
-                                <tr><td>What:<td></tr>
+                                <!-- CSS: topSearch: different Size and Color=Blue -->
+                                <tr><td class="topSearch">What:<td></tr>
                                 <tr><td><input size="31" maxlength="512" id="what" autocomplete="off"><td></tr>
-                                <tr><td>major, keywords or college<td></tr>
+                                <!-- CSS: bottonSearch: size=(smaller than topSearch) and Color=grey -->
+                                <tr><td class="bottonSearch">major, keywords or college<td></tr>
                             </tbody>
                         </table>
                     </td> 
                     <td id="whereSearch"> 
                         <table>
                             <tbody>
-                                <tr><td>Where:<td></tr>
+                                <tr><td class="topSearch">Where:<td></tr>
                                 <tr><td><input size="31" maxlength="512" id="what" autocomplete="off"><td></tr>
-                                <tr><td>city, state or zip<td></tr>
+                                <tr><td class="bottomSearch">city, state or zip<td></tr>
                             </tbody>
                         </table>
                     </td>
+                    <!-- Javascript/Php: buttonSearch: Button response -->
                     <td id="buttonSearch"><button type="button" onclick=SearchResults()> Search</button></td>
                 </tr>
             <tbody>
@@ -46,7 +49,9 @@
                 <table>
                     <tbody>
                         <tr id="searchByRecent">
+                            <!-- CSS: seachByListTitle: Title for the Result Slightly Larger than SearchByList class and Bolded-->
                             <div class="seachByListTitle"><b>Recent Searches</b></div>
+                            <!-- CSS:  searchByList: Text = Smaller that searchByListTitle and not bolded Color=Grey Bullets=None-->
                             <ul class="searchByList">
                                 <li>Boston, MA</li>
                                 <li>Computer Networking</li>
@@ -87,9 +92,13 @@
                             <td>
                             <table>
                                 <tbody>
+                                    <!-- CSS: resultTitle: Text is larger Color=Blue -->
                                     <tr class="resultTitle"><td><b>Wentworth Institute of Technology</b></td></tr>
+                                    <!-- CSS: resultLocation: text slightly smaller than resultTitle and Color=Grey -->
                                     <tr class="resultLocation"><td>Boston, MA 02115</td></tr>
+                                    <!-- CSS: resultAcceptanceRate: Same text slightly smaller than resultLocation and Color=Black -->
                                     <tr class="resultAcceptanceRate"><td>68% Acceptance</td></tr>
+                                    <!-- CSS: resultSummary: same everything as resultAcceptanceRate -->
                                     <tr class="resultSummary"><td>Wentworth Institute of Technology (WIT) is an independent, co-educational, technical design and engineering college located in Boston, Massachusetts. </td></tr>
                                 </tbody>
                             </table>
