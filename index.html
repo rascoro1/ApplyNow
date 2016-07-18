@@ -7,22 +7,145 @@
                 <tr class="spaceOut">
                     <td><a href='/' title="Home" id="homeLink"> Home</a></td>
                     <td><a href='/' title="Update Application" id="applicationLink"> Upload Application</a></td>
-                    <td align="right" nowrap><a href='/' title="Login" id="applicationLink">Login</a></td>
+                    <td align="right"><a href='/' title="Login" id="applicationLink">Login</a></td>
                 </tr>
             </table>
         </div>
         <hr>
 
         <table id="searchBars">
-            <tr>
-                <td id="whatSeach">What</td> <td id="whereSearch">Where</td> <td id="buttonSearch">Search</td>
-            </tr>
+            <tbody>
+                <tr>
+                    <td id="logoCol"><img class="applyNowLogo" src="imgs/Apply_now_logo.jpg"></td>
+                    <td id="whatSeach">
+                        <table>
+                            <tbody>
+                                <tr><td>What:<td></tr>
+                                <tr><td><input size="31" maxlength="512" id="what" autocomplete="off"><td></tr>
+                                <tr><td>major, keywords or college<td></tr>
+                            </tbody>
+                        </table>
+                    </td> 
+                    <td id="whereSearch"> 
+                        <table>
+                            <tbody>
+                                <tr><td>Where:<td></tr>
+                                <tr><td><input size="31" maxlength="512" id="what" autocomplete="off"><td></tr>
+                                <tr><td>city, state or zip<td></tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td id="buttonSearch"><button type="button" onclick=SearchResults()> Search</button></td>
+                </tr>
+            <tbody>
         </table>
 
         <table id="mainDisplay">
             <tr>
-            <td id="refineResultsCol">RefineResultsCol</td>
-            <td id="resultsCol">resultsCol</td>
+            <td id="refineResultsCol">
+                <table>
+                    <tbody>
+                        <tr id="searchByRecent">
+                            <div class="seachByListTitle"><b>Recent Searches</b></div>
+                            <ul class="searchByList">
+                                <li>Boston, MA</li>
+                                <li>Computer Networking</li>
+                                <li>Junior</li>
+                                <ali>Undergrad</li>
+                            </ul>
+                        </tr>
+                        <tr id="searchByLocation"></tr>
+                            <div class="seachByListTitle"><b>Search by Location</b></div>
+                            <ul class="searchByList">
+                                <li>Boston, MA</li>
+                                <li>Conneticut</li>
+                                <li>Waltham</li>
+                                <ali>02115</li>
+                            </ul>
+                        <tr id="searchByMajor"></tr>
+                            <div class="seachByListTitle"><b>Search by Major</b></div>
+                            <ul class="searchByList">
+                                <li>Communnications</li>
+                                <li>Computer Networking</li>
+                                <li>Business</li>
+                                <ali>Photography</li>
+                            </ul>
+                        <tr id="searchByPopulation"></tr>
+                            <div class="seachByListTitle"><b>Search by Population</b></div>
+                            <ul class="searchByList">
+                                <li>less than 5000</li>
+                                <li>5,000-10,000</li>
+                                <li>10,000-20,000</li>
+                                <ali>20,000+</li>
+                            </ul>
+                </table>
+            </td>
+            <td id="resultsCol">
+                <table>
+                    <tbody>
+                        <tr id="result1">
+                            <td>
+                            <table>
+                                <tbody>
+                                    <tr class="resultTitle"><td><b>Wentworth Institute of Technology</b></td></tr>
+                                    <tr class="resultLocation"><td>Boston, MA 02115</td></tr>
+                                    <tr class="resultAcceptanceRate"><td>68% Acceptance</td></tr>
+                                    <tr class="resultSummary"><td>Wentworth Institute of Technology (WIT) is an independent, co-educational, technical design and engineering college located in Boston, Massachusetts. </td></tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        </tr>
+                        <tr id="result2">
+                            <td>
+                            <table>
+                                <tbody>
+                                    <tr class="resultTitle"><td><b>Boston Universuty</b></td></tr>
+                                    <tr class="resultLocation"><td>Boston, MA 02115</td></tr>
+                                    <tr class="resultAcceptanceRate"><td>45% Acceptance</td></tr>
+                                    <tr class="resultSummary"><td>Wentworth Institute of Technology (WIT) is an independent, co-educational, technical design and engineering college located in Boston, Massachusetts. </td></tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        </tr>
+                        <tr id="result3">
+                            <td>
+                            <table>
+                                <tbody>
+                                    <tr class="resultTitle"><td><b>Wentworth Institute of Technology</b></td></tr>
+                                    <tr class="resultLocation"><td>Boston, MA 02115</td></tr>
+                                    <tr class="resultAcceptanceRate"><td>68% Acceptance</td></tr>
+                                    <tr class="resultSummary"><td>Wentworth Institute of Technology (WIT) is an independent, co-educational, technical design and engineering college located in Boston, Massachusetts. </td></tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        </tr>
+                        <tr id="result4">
+                            <td>
+                            <table>
+                                <tbody>
+                                    <tr class="resultTitle"><td><b>Wentworth Institute of Technology</b></td></tr>
+                                    <tr class="resultLocation"><td>Boston, MA 02115</td></tr>
+                                    <tr class="resultAcceptanceRate"><td>68% Acceptance</td></tr>
+                                    <tr class="resultSummary"><td>Wentworth Institute of Technology (WIT) is an independent, co-educational, technical design and engineering college located in Boston, Massachusetts. </td></tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        </tr>
+                        <tr id="result5">
+                            <td>
+                            <table>
+                                <tbody>
+                                    <tr class="resultTitle"><td><b>Wentworth Institute of Technology</b></td></tr>
+                                    <tr class="resultLocation"><td>Boston, MA 02115</td></tr>
+                                    <tr class="resultAcceptanceRate"><td>68% Acceptance</td></tr>
+                                    <tr class="resultSummary"><td>Wentworth Institute of Technology (WIT) is an independent, co-educational, technical design and engineering college located in Boston, Massachusetts. </td></tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
             </tr>
         </table>
     </body>
