@@ -1,0 +1,115 @@
+header {
+	margin-bottom:30px;
+}
+
+.topNavBar {
+    right: 0px;
+}
+
+.topSearch {
+    font-size: 20px;
+    color: green;
+}
+
+.bottonSearch {
+    font-size: 14px;
+    color: grey;
+}
+
+.seachByListTitle {
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+}
+
+.searchByList {
+    width: 150;
+    padding-left: 1em;
+    list-style: none;
+    font-size: 14px;
+    color: #4d79ff;
+}
+
+.refineHover:hover {
+    background: #ADD8E6;
+}
+
+.mainSearchField{
+
+    font-size: 1.25em;
+}
+
+.buttonSearch {
+    font-size: 1.25em;
+}
+
+.refineResultsTable {
+
+}
+
+.refineResultsCol {
+    vertical-align: top;
+}
+
+.resultsCol {
+    vertical-align: top;
+}
+
+.resultTitle {
+    color: blue;
+    font-size: 17px;
+}
+
+.resultLocation {
+    color: grey;
+    font-size: 15px;
+}
+
+.resultAcceptanceRate {
+    color: green;
+    font-size: 15px;
+}
+
+.resultTution {
+    color: orange;
+    font-size: 14px;
+}
+
+.resultSummary {
+    color: black;
+    font-size: 16px;
+}
+
+.result:hover{
+    background: #ADD8E6;
+}
+
+.formRefineCheck {
+    padding-left:1em;
+    color: #4d79ff;
+}
+
+.refineHoverCheck:hover{
+    background: #ADD8E6;
+}
+
+
+.hoverTable{
+    width:100%; 
+    border-collapse:collapse; 
+}
+.hoverTable td{ 
+    padding:7px; border:#4e95f4 1px solid;
+}
+/* Define the default color for all the table rows */
+.hoverTable tr{
+    background: #b8d1f3;
+}
+/* Define the hover highlight color for the table row */
+.hoverTable tr:hover {
+      background-color: #ffff99;
+}
+
+
