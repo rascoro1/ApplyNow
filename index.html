@@ -3,17 +3,18 @@
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<meta charset="utf-8">
-		<title>Bootstrap Sidebar</title>
-		<meta name="generator" content="Bootply" />
+		<title>ApplyNow</title>
+		<meta name="generator" content="ApplyNow" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
 		<!--[if lt IE 9]>
 			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 		<link href="css/styles.css" rel="stylesheet">
 	</head>
 	<body>
-
+<!-- Begin Top Nav Bar -->
 <header class="navbar navbar-default navbar-static-top" role="banner">
   <div class="container">
     <div class="navbar-header">
@@ -23,23 +24,26 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="/" class="navbar-brand">ApplyNow</a>
+      <a href="index.html" class="navbar-brand">ApplyNow</a>
     </div>
     <nav class="collapse navbar-collapse" role="navigation">
       <ul class="nav navbar-nav">
         <li>
-          <a href="#">Upload Application</a>
+          <a href="upload_application.html">Upload Application</a>
         </li>
         <li>
-          <a href="#">Sign up</a>
+          <a href="register.html">Register</a>
         </li>
         <li>
-          <a href="#">Login</a>
+          <a href="login.html">Login</a>
         </li>
       </ul>
     </nav>
   </div>
 </header>
+
+<?php include 'php/top_nav.php';?>
+<?php include("php/top_nav.php"); ?>
 
 <!-- Begin Body -->
 <div class="container">
@@ -59,12 +63,20 @@
                   </li>
                   <li>
                       <div class="seachByListTitle"><b>Search by Location</b></div>
-                      <form action="" class="formRefineCheck">
-                        <input type="checkbox" name="Population" value="<5000" id="less5k"> Boston, MA<br>
-                        <input type="checkbox" name="Population" value="5-10" id="5kto10k"> Conneticut<br>
-                        <input type="checkbox" name="Population" value="10-20" id="10to20k"> Waltham<br>
-                        <input type="checkbox" name="Population" value="+20" id="plus20k"> 02115<br>
-                      </form>
+                      <div class="btn-group" data-toggle="buttons" >
+                        <label class="btn btn-primary btn-s btn-block btn-refine">
+                          <input type="checkbox" checked autocomplete="off"> Boston, MA
+                        </label><br>
+                        <label class="btn btn-primary btn-s btn-block btn-refine">
+                          <input type="checkbox" autocomplete="off"> Conneticut
+                        </label><br>
+                        <label class="btn btn-primary btn-s btn-block btn-refine">
+                          <input type="checkbox" autocomplete="off"> Waltham
+                        </label><br>
+                        <label class="btn btn-primary btn-s btn-block btn-refine">
+                          <input type="checkbox" autocomplete="off"> 02115
+                        </label><br>
+                      </div>
                   </li>
                   <li>
                       <div class="seachByListTitle"><b>Search by Majors</b></div>
@@ -84,6 +96,8 @@
                             <input type="checkbox" name="Population" value="+20" id="plus20k"> +20,001<br>
                       </form>
                   </li>
+                  <li><hr></li>
+                  <li align="center"><button type="button" id= "refineSubmit"class="btn btn-primary btn-sm">Submit</button></li>
               	</ul>
   				</div>
 
@@ -139,6 +153,7 @@
                             </table>
                         </td>
                         </tr>
+                        <tr><td><hr></td></tr>
                         <tr class="result">
                             <td>
                             <table>
@@ -152,6 +167,7 @@
                             </table>
                         </td>
                         </tr>
+                        <tr><td><hr></td></tr>
                         <tr class="result">
                             <td>
                             <table>
@@ -165,6 +181,7 @@
                             </table>
                         </td>
                         </tr>
+                        <tr><td><hr></td></tr>
                         <tr class="result">
                             <td>
                             <table>
@@ -178,6 +195,7 @@
                             </table>
                         </td>
                         </tr>
+                        <tr><td><hr></td></tr>
                         <tr class="result">
                             <td>
                             <table>

@@ -1,0 +1,81 @@
+table {
+    
+}
+.topNavBar {
+    right: 0px;
+}
+
+.topSearch {
+    font-size: 20px;
+    color: green;
+}
+
+.bottonSearch {
+    font-size: 14px;
+    color: grey;
+}
+
+.seachByListTitle {
+    font-size: 16px;
+    color: black;
+}
+
+.searchByList {
+    width: 150;
+    margin: 2px;
+    padding: 2px;
+    list-style: none;
+    font-size: 14px;
+    color: grey;
+}
+
+.mainSearchField{
+
+    font-size: 1.25em;
+}
+
+.buttonSearch {
+    font-size: 1.25em;
+}
+
+.refineResultsTable {
+
+}
+
+.refineResultsCol {
+    vertical-align: top;
+}
+
+.resultsCol {
+    vertical-align: top;
+}
+
+.resultTitle {
+    color: blue;
+    font-size: 17px;
+}
+
+.resultLocation {
+    color: grey;
+    font-size: 15px;
+}
+
+.resultAcceptanceRate {
+    color: green;
+    font-size: 15px;
+}
+
+.resultTution {
+    color: orange;
+    font-size: 14px;
+}
+
+.resultSummary {
+    color: black;
+    font-size: 16px;
+}
+
+.result:hover{
+    background: #ADD8E6;
+;
+}
