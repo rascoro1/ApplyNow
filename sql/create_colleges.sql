@@ -1,0 +1,4 @@
+CREATE TABLE colleges
+(
+Established VARCHAR(100),Sporting_affiliations VARCHAR(100),Sports VARCHAR(100),Affiliations VARCHAR(100),Location VARCHAR(100),Type VARCHAR(100),Website VARCHAR(300),Latin VARCHAR(100),Former_names VARCHAR(100),Students VARCHAR(100),Chancellor VARCHAR(100),Provost VARCHAR(100),Academic_staff VARCHAR(100),Address VARCHAR(100),President VARCHAR(100),Motto VARCHAR(100),Administrative_staff VARCHAR(100),Mascot VARCHAR(100),Name VARCHAR(100),Academic_affiliation VARCHAR(100),Budget VARCHAR(100),Postgraduates VARCHAR(100),Motto_in English VARCHAR(100),Newspaper VARCHAR(100),Athletics VARCHAR(100),Nickname VARCHAR(100),Image VARCHAR(300),Student_newspaper VARCHAR(100),Undergraduates VARCHAR(100),Affiliation VARCHAR(100),Colors VARCHAR(100),Seal VARCHAR(100),Doctoral_students VARCHAR(100),Endowment VARCHAR(100),Campus VARCHAR(100),Chairman VARCHAR(100)
+);
